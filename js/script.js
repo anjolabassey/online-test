@@ -1,5 +1,6 @@
 var sub = document.getElementById("register");
-var subject;
+var subject, name, matNo; 
+
 var main = document.getElementById("test");
 var controls = document.getElementById("buttons");
 var counter = 0;
@@ -103,6 +104,7 @@ function createNext() {
 		console.log(questions);
 		if (counter < questions.length - 1) {
 		getTest(subject, counter);
+		
 		} else {
 			getTest(subject, counter);
 			next.remove();
@@ -129,7 +131,7 @@ function createDone() {
 	controls.appendChild(done);
 	
 	done.addEventListener("click", function() {
-		main.innerHTML = "<h3>" + "Ade, your score is 0 out of 5" + "</h3";
+		main.innerHTML = "<h3>" + sessionStorage.getItem("name", name) + " with Matric No " + sessionStorage.getItem("matno", matNo) + ", your score is 0 out of " + questions.length + "</h3";
 		done.remove();
 	});
 }
@@ -142,6 +144,5 @@ function displayNext() {
 }
 
 function getAnswer() {
-	
+	document.getElementById("one").value
 }
-
