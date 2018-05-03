@@ -5,6 +5,8 @@ var controls = document.getElementById("buttons");
 var counter = 0;
 var score;
 var questions;
+var i;
+var a = ""; var b = ""; var c = ""; var q = "";
 
 
 sub.addEventListener("click", function(event) {
@@ -13,8 +15,8 @@ sub.addEventListener("click", function(event) {
 	//validateForm();
 	storeUser();
 	clearDiv();
-	getTest(subject);
-	//createNext();
+	getTest(subject, counter);
+	createNext();
 	// displayNext();
 });
 
@@ -48,7 +50,7 @@ function storeUser() {
 
 // clears the page(after user info is stored)
 function clearDiv() {
-	document.getElementById("test").innerHTML = "";		
+	main.innerHTML = "";		
 }
 
 function getData(result) { 
@@ -64,26 +66,23 @@ function getData(result) {
 	xhttp.send();
 }
 
-function getTest(subject) {
-	var a = ""; var b = ""; var c = ""; var q = "";
+function getTest(subject, counter) {
+	
 	getData(function (obj) {
 		result = JSON.parse(obj);
 		questions = result.subjects[subject];
-				// for (i=0; i < result.subjects[subject].length; i++) {
-					
-				// }
-			document.getElementById("title").innerHTML = subject + " Test";
-
-			q += "<h3 id='quest'>" + questions[counter].question + "</h3>";	
-			a += "<input type='radio' id='one'>" + questions[counter].options[0] + "</input>" + "<br>";
-			b += "<input type='radio' id='two'>" + questions[counter].options[1] + "</input>" + "<br>";
-			c += "<input type='radio' id='three'>" + questions[counter].options[2] + "</input>";
-						
+			
+		document.getElementById("title").innerHTML = subject + " Test";
+		console.log(counter);
+		console.log(questions);
+			q = "<h3 id='quest'>" + questions[counter].question + "</h3>";	
+			a = "<input type='radio' id='one'>" + questions[counter].options[0] + "</input>" + "<br>";
+			b = "<input type='radio' id='two'>" + questions[counter].options[1] + "</input>" + "<br>";
+			c = "<input type='radio' id='three'>" + questions[counter].options[2] + "</input>";
 			main.innerHTML =  q + a + b + c;
-				
+			
 						
 	});
-	createNext();
 }
 
 function createNext() {
@@ -94,19 +93,39 @@ function createNext() {
 	controls.appendChild(next);
 
 	
+	next.addEventListener("click", function() {
+		clearDiv();
+		counter++;
+		getTest(subject, counter);
+		
+	});
+	
 }
 
 function createPrev() {
-	var next = document.createElement("input");
-	next.setAttribute('type', "submit");
-	next.setAttribute('value', "Prev");
-	next.setAttribute('id', "prev")
-	controls.appendChild(next);
+	var prev = document.createElement("input");
+	prev.setAttribute('type', "submit");
+	prev.setAttribute('value', "Prev");
+	prev.setAttribute('id', "prev")
+	controls.appendChild(prev);
 }
+
+function createDone() {
+	var done = document.createElement("input");
+	done.setAttribute('type', "submit");
+	done.setAttribute('value', "Done");
+	done.setAttribute('id', "done")
+	controls.appendChild(done);
+}
+
+
 
 function displayNext() {
 	
 	
 }
 
-next.addEventListener("click", displayNext());
+function getAnswer() {
+	
+}
+

@@ -73,13 +73,16 @@ function getTest(subject, counter) {
 		questions = result.subjects[subject];
 			
 		document.getElementById("title").innerHTML = subject + " Test";
-		console.log(counter);
-		console.log(questions);
-			q = "<h3 id='quest'>" + questions[counter].question + "</h3>";	
+		
+
+			
+				q = "<h3 id='quest'>" + questions[counter].question + "</h3>";	
 			a = "<input type='radio' id='one'>" + questions[counter].options[0] + "</input>" + "<br>";
 			b = "<input type='radio' id='two'>" + questions[counter].options[1] + "</input>" + "<br>";
 			c = "<input type='radio' id='three'>" + questions[counter].options[2] + "</input>";
 			main.innerHTML =  q + a + b + c;
+			
+			
 			
 						
 	});
@@ -96,7 +99,15 @@ function createNext() {
 	next.addEventListener("click", function() {
 		clearDiv();
 		counter++;
+		console.log(counter);
+		console.log(questions);
+		if (counter < questions.length - 1) {
 		getTest(subject, counter);
+		} else {
+			getTest(subject, counter);
+			next.remove();
+			createDone();
+		}
 		
 	});
 	
@@ -116,6 +127,11 @@ function createDone() {
 	done.setAttribute('value', "Done");
 	done.setAttribute('id', "done")
 	controls.appendChild(done);
+	
+	done.addEventListener("click", function() {
+		main.innerHTML = "<h3>" + "Ade, your score is 0 out of 5" + "</h3";
+		done.remove();
+	});
 }
 
 
