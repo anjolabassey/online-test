@@ -1,0 +1,181 @@
+{
+    "subjects": {
+        "HTML": [
+            {
+            
+                "question": "1. What does HTML stand for",
+                "options": [
+                    "Hyper Text Markup Language",
+                    "Hyper Text Makeup Language",
+                    "Hyper Link Markup Language"
+                    
+                ],
+                "answer": "Hyper Text Markup Language"
+            },
+
+            {
+                "question": "2. An iframe is used to display a web page within a web page",
+                "options": [
+                    "True",
+                    "False",
+                    "There is no such thing"
+                    
+                ],
+                "answer": "True"
+            },
+
+             {
+                "question": "3. Who is making the Web standards?",
+                "options": [
+                    "Mozilla",
+                    "World Wide Web Consortium",
+                    "Mozilla"
+                    
+                ],
+                "answer": "World Wide Web Consortium"
+            },
+
+            {
+                "question": "4. Who is making the Web standards?",
+                "options": [
+                    "Mozilla",
+                    "World Wide Web Consortium",
+                    "Mozilla"
+                    
+                ],
+                "answer": "World Wide Web Consortium"
+            },
+
+            {
+                "question": "5. Who is making the Web standards?",
+                "options": [
+                    "Mozilla",
+                    "World Wide Web Consortium",
+                    "Mozilla"
+                    
+                ],
+                "answer": "World Wide Web Consortium"
+            }
+            
+        ],
+
+
+        "CSS": [
+            {
+                "question": "1. What does CSS stand for?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "2. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "3. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "4. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "5. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            }
+
+
+        ],
+
+        "JAVASCRIPT": [
+            {
+                "question": "1. What does JAVASCRIPT stand for?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "2. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "3. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "4. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            },
+
+            {
+                "question": "5. Which one is correct team name in NBA?",
+                "options": [
+                    "New York Bulls",
+                    "Los Angeles Kings",
+                    "Golden State Warriors"
+                    
+                ],
+                "answer": "New York Bulls"
+            }
+        ]
+        
+    
+    }
+}

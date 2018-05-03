@@ -1,0 +1,44 @@
+
+header {
+	background-color: grey;
+	color: white;
+	text-align: center;
+	height: 80px;
+	padding: 10px;
+
+}
+
+.container {
+	background-color: lightgrey;
+	color: black;
+	padding: 20px;
+	height: 300px;
+
+
+}
+
+input[type="submit"] {
+	background-color: grey;
+	color: white;
+	border: none;
+	font-weight: bold;
+	padding: 10px;
+	margin-top: 25px;
+	margin-left: 45%;
+}
+
+input[type="text"] {
+	height: 30px;
+	margin-bottom: 10px;
+	padding: 5px;
+
+}
+
+select {
+	margin-bottom: 10px;
+	height: 30px;
+}
+
+a {
+	text-decoration: none;
+}
