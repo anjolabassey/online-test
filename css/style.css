@@ -1,38 +1,50 @@
-
-header {
-	background-color: grey;
+body {
+	margin: 0;
+	
+}
+.header {
+	background-color:  #347889;
 	color: white;
-	text-align: center;
 	height: 80px;
 	padding: 10px;
+	text-align: center;
 
 }
 
 .container {
-	background-color: lightgrey;
+	background-color:  #cfeef5;
 	color: black;
+	text-align: justify;
+	height: 400px;
+	margin: 100px 250px;
+}
+#test {
 	padding: 20px;
-	height: 300px;
-
-
+	
 }
 
-input[type="submit"] {
-	background-color: grey;
+input[type="submit"], input[type="button"]  {
+	background-color:  #347889;
 	color: white;
 	border: none;
+	border-radius: 2px;
 	font-weight: bold;
 	padding: 10px;
-	margin-top: 40px;
-	margin-left: 20%;
+	margin-top: 30px;
+	margin-left: 50px;
 }
 
 input[type="text"] {
 	height: 30px;
+	width: 300px;
+	margin-top: 5px;
 	margin-bottom: 10px;
+	border: none;
 	padding: 5px;
 
 }
+
+
 
 select {
 	margin-bottom: 10px;

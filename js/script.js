@@ -100,10 +100,10 @@ function getTest(subject, counter) {
 		createOptions();
 	
 		if(counter === 0 ) {
-			next.style.display = "block";
+			next.style.display = "inline";
 			
 		} else if(counter < questions.length) {
-			prev.style.display = "block";
+			prev.style.display = "inline";
 		} 
 	});
 }
@@ -122,7 +122,7 @@ next.addEventListener("click", function() {
 		getTest(subject, counter);
 		next.style.display = "none";
 		prev.style.display = "none";
-		done.style.display = "block";
+		done.style.display = "inline";
 
 	}
 });
@@ -167,7 +167,6 @@ function getAnswer() {
 	if(picked == questions[counter].answer) {
 		score++;
 	}
-	
 	//sessionStorage.setItem("answer", answer);
 }
 
