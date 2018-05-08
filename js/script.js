@@ -67,8 +67,10 @@ function createOptions() {
 		var radio = document.createElement("input");
 		radio.setAttribute("type", "radio");
 		radio.setAttribute("name", "options");
+		radio.setAttribute("value", ""+ questions[counter].options[j] + "");
 		
 		var opt = document.createElement("div");
+		opt.setAttribute("id", "choices")
 		var ltxt = document.createTextNode( questions[counter].options[j]);
 		opt.appendChild(radio);
 		opt.appendChild(ltxt);
@@ -156,20 +158,19 @@ again.addEventListener("click", function() {
 });
 
 function displayScore() {
-	for (var j=0; j < questions.length; j++) {
-		if(picked == questions[counter].answer[j]) {
-			score++;
-		} 
-		
-	}
 	main.innerHTML = "<h3>" + sessionStorage.getItem("name", name) + " with Matric No " + sessionStorage.getItem("matno", matNo) + ", your score is " + score + " out of " + questions.length + "</h3";
 }
 function getAnswer() {
-	questions[counter] = document.querySelector("r").checked.value;
-	picked = questions[counter];
-	console.log(picked);
-	// sessionStorage.setItem("answer", answer);
+	questions[counter].userAnswer = document.querySelector('input[name="options"]:checked').value;
+	picked = questions[counter].userAnswer;
+
+	if(picked == questions[counter].answer) {
+		score++;
+	}
+	
+	//sessionStorage.setItem("answer", answer);
 }
+
 
 function timer() {
 
