@@ -153,6 +153,7 @@ done.addEventListener("click", function() {
 again.addEventListener("click", function() {
 	clearDiv();
 	counter = 0;
+	score = 0;
 	getTest(subject, counter);
 	again.style.display = "none";		
 });
