@@ -114,13 +114,9 @@ function getTest(subject, counter) {
 }
 
 next.addEventListener("click", function() {
-	if(!answer) {
-		alert("Please pick an option");
-	}
 	getAnswer();
 	clearDiv();
 	counter++;
-	
 	
 	if (counter < questions.length - 1) {
 		getTest(subject, counter);
@@ -133,6 +129,8 @@ next.addEventListener("click", function() {
 		done.style.display = "inline";
 
 	}
+
+
 });
 
 
@@ -178,8 +176,8 @@ function displayScore() {
 	main.innerHTML = "<h3>" + sessionStorage.getItem("name", name) + " with Matric No " + sessionStorage.getItem("matno", matNo) + ", your score is " + score + " out of " + questions.length + "</h3";
 }
 function getAnswer() {
-	answer = document.querySelector('input[name="options"]:checked').value;
-	picked.push(answer);
+	answer = document.querySelector('input[name="options"]:checked');
+	picked.push(answer.value);
 
 	if(picked.includes(questions[counter].answer)) {
 		score+= 1;
