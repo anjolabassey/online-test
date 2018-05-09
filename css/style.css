@@ -3,8 +3,7 @@ body {
 	
 }
 .header {
-	background-color:  #347889;
-	color: white;
+	color:  #134552;
 	height: 80px;
 	padding: 10px;
 	text-align: center;
@@ -12,25 +11,29 @@ body {
 }
 
 .container {
-	background-color:  #e7eef0;
+	max-width: 50%;
+	background: rgb(214, 217, 218);
 	color: black;
+	box-sizing: border-box;
+	padding: 0 30px;
+	margin: 120px auto;
+	border-radius: 10px; 
 	text-align: justify;
-	height: 400px;
-	margin: 100px 250px;
 }
+
 #test {
 	padding: 20px;
 	
 }
 
 input[type="submit"], input[type="button"]  {
-	background-color:  #347889;
-	color: white;
+	background-color:  #134552;
+	color:white;
 	border: none;
 	border-radius: 2px;
 	font-weight: bold;
 	padding: 10px;
-	margin-top: 30px;
+	margin: 40px;
 	margin-left: 50px;
 }
 
@@ -45,8 +48,8 @@ input[type="text"] {
 }
 
 select {
-	width: 300px;
-	margin-bottom: 10px;
+	width: 200px;
+	margin: 10px 0;
 	height: 30px;
 	border: none;
 }
