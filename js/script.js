@@ -158,9 +158,12 @@ prev.addEventListener("click", function() {
 done.addEventListener("click", function() {
 	getAnswer();	
 	displayScore();
-	again.style.display = "inline";
-	prev.style.display = "none";
 	done.style.display = "none";
+	prev.style.display = "none";
+	again.style.display = "inline";
+	another.style.display = "inline";
+	
+	
 });
 	
 again.addEventListener("click", function() {
@@ -169,8 +172,13 @@ again.addEventListener("click", function() {
 	score = 0;
 	picked = [];
 	getTest(subject, counter);
-	again.style.display = "none";		
+	again.style.display = "none";	
+	another.style.display = "none";	
 });
+another.addEventListener("click", function() {
+	location.reload();
+});
+	
 
 function displayScore() {
 	main.innerHTML = "<h3>" + sessionStorage.getItem("name", name) + " with Matric No " + sessionStorage.getItem("matno", matNo) + ", your score is " + score + " out of " + questions.length + "</h3";
