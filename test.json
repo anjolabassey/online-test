@@ -27,7 +27,7 @@
              {
                 "question": "3. Who is making the Web standards?",
                 "options": [
-                    "Mozilla",
+                    "Google",
                     "World Wide Web Consortium",
                     "Mozilla"
                     
@@ -36,25 +36,25 @@
             },
 
             {
-                "question": "4. Who is making the Web standards?",
+                "question": "4. What is a script?",
                 "options": [
-                    "Mozilla",
-                    "World Wide Web Consortium",
-                    "Mozilla"
+                    "Set of rules",
+                    "Set of instructions",
+                    "Set of code"
                     
                 ],
-                "answer": "World Wide Web Consortium"
+                "answer": "Set of instructions"
             },
 
             {
-                "question": "5. Who is making the Web standards?",
+                "question": "5. Which of the following is not a data type?",
                 "options": [
-                    "Mozilla",
-                    "World Wide Web Consortium",
-                    "Mozilla"
+                    "String",
+                    "Number",
+                    "Function"
                     
                 ],
-                "answer": "World Wide Web Consortium"
+                "answer": "Function"
             }
             
         ],

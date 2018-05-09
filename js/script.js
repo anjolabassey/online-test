@@ -4,7 +4,7 @@ var subject, name, matNo;
 var score = 0;
 var questions;
 var counter = 0;
-var picked;
+var picked = []
 var i;
 
 
@@ -62,8 +62,8 @@ function createQuestion() {
 }
 
 function createOptions() {
+	
 	for (var j=0; j < questions[counter].options.length; j++) {
-		
 		var radio = document.createElement("input");
 		radio.setAttribute("type", "radio");
 		radio.setAttribute("name", "options");
@@ -72,10 +72,21 @@ function createOptions() {
 		var opt = document.createElement("div");
 		opt.setAttribute("id", "choices")
 		var ltxt = document.createTextNode( questions[counter].options[j]);
+		
 		opt.appendChild(radio);
 		opt.appendChild(ltxt);
 		main.appendChild(opt);
+
+		if (picked.includes(radio.value)) {
+			
+			console.log(picked);
+			console.log(radio.value);
+			
+			radio.checked= true;
+		
+		} 
 	}
+	
 	
 }
 function getData(result) { 
@@ -154,6 +165,7 @@ again.addEventListener("click", function() {
 	clearDiv();
 	counter = 0;
 	score = 0;
+	picked = [];
 	getTest(subject, counter);
 	again.style.display = "none";		
 });
@@ -163,12 +175,15 @@ function displayScore() {
 }
 function getAnswer() {
 	questions[counter].userAnswer = document.querySelector('input[name="options"]:checked').value;
-	picked = questions[counter].userAnswer;
+	picked.push(questions[counter].userAnswer);
 
-	if(picked == questions[counter].answer) {
-		score++;
+	if(picked.includes(questions[counter].answer)) {
+		score+= 1;
+	} else {
+		score += 0;
 	}
-	//sessionStorage.setItem("answer", answer);
+	
+	//sessionStorage.setItem("answer", questions[counter].userAnswer);
 }
 
 
