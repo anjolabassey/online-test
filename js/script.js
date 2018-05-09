@@ -2,7 +2,7 @@ var start = document.getElementById("start");
 var main = document.getElementById("test");
 var subject, name, matNo; 
 var score = 0;
-var questions;
+var questions, answer;
 var counter = 0;
 var picked = []
 var i;
@@ -77,18 +77,12 @@ function createOptions() {
 		opt.appendChild(ltxt);
 		main.appendChild(opt);
 
-		if (picked.includes(radio.value)) {
-			
-			console.log(picked);
-			console.log(radio.value);
-			
+		if (picked.includes(radio.value)) {		
 			radio.checked= true;
-		
 		} 
 	}
-	
-	
 }
+
 function getData(result) { 
 	var xhttp = new XMLHttpRequest();
 	xhttp.overrideMimeType("application/json");
@@ -120,10 +114,13 @@ function getTest(subject, counter) {
 }
 
 next.addEventListener("click", function() {
+	if(!answer) {
+		alert("Please pick an option");
+	}
 	getAnswer();
-	
 	clearDiv();
 	counter++;
+	
 	
 	if (counter < questions.length - 1) {
 		getTest(subject, counter);
@@ -147,6 +144,13 @@ prev.addEventListener("click", function() {
 		getTest(subject, counter);
 		prev.style.display = "none";
 		done.style.display = "none";
+
+	} else if(counter < questions.length) {
+		getTest(subject, counter);
+		done.style.display = "none";
+		prev.style.display = "inline";
+		next.style.display = "inline";
+
 	} else {
 		getTest(subject, counter);
 			
@@ -174,8 +178,8 @@ function displayScore() {
 	main.innerHTML = "<h3>" + sessionStorage.getItem("name", name) + " with Matric No " + sessionStorage.getItem("matno", matNo) + ", your score is " + score + " out of " + questions.length + "</h3";
 }
 function getAnswer() {
-	questions[counter].userAnswer = document.querySelector('input[name="options"]:checked').value;
-	picked.push(questions[counter].userAnswer);
+	answer = document.querySelector('input[name="options"]:checked').value;
+	picked.push(answer);
 
 	if(picked.includes(questions[counter].answer)) {
 		score+= 1;

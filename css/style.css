@@ -12,7 +12,7 @@ body {
 }
 
 .container {
-	background-color:  #cfeef5;
+	background-color:  #e7eef0;
 	color: black;
 	text-align: justify;
 	height: 400px;
@@ -36,7 +36,7 @@ input[type="submit"], input[type="button"]  {
 
 input[type="text"] {
 	height: 30px;
-	width: 300px;
+	width: 200px;
 	margin-top: 5px;
 	margin-bottom: 10px;
 	border: none;
@@ -44,11 +44,11 @@ input[type="text"] {
 
 }
 
-
-
 select {
+	width: 300px;
 	margin-bottom: 10px;
 	height: 30px;
+	border: none;
 }
 
 a {
