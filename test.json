@@ -64,56 +64,56 @@
             {
                 "question": "1. What does CSS stand for?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "Cascading Style Sheets",
+                    "Computer Style Sheets",
+                    "Cascading Sheets Styles"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "Cascading Style Sheets"
             },
 
             {
-                "question": "2. Which one is correct team name in NBA?",
+                "question": "2. Where in an HTML document is the correct place to refer to an external style sheet?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "In the <body> section",
+                    "In the <head> section",
+                    "At end of the document"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "In the <head> section"
             },
 
             {
-                "question": "3. Which one is correct team name in NBA?",
+                "question": "3. Which HTML tag is used to define an internal style sheet?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "<css>",
+                    "<script>",
+                    "<style>"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "<style>"
             },
 
             {
-                "question": "4. Which one is correct team name in NBA?",
+                "question": "4. Which is the correct CSS syntax?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "body {color: black;}",
+                    "{body:color=black;}",
+                    "{body;color:black;}"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "body {color: black;}"
             },
 
             {
-                "question": "5. Which one is correct team name in NBA?",
+                "question": "5. How do you insert a comment in a CSS file?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "// this is a comment",
+                    "/* this is a comment */",
+                    "// this is a comment //"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "/* this is a comment */"
             }
 
 
@@ -121,58 +121,58 @@
 
         "JAVASCRIPT": [
             {
-                "question": "1. What does JAVASCRIPT stand for?",
+                "question": "1. Where is the correct place to insert a JavaScript?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "The <head> section",
+                    "The <body> section",
+                    "Both the <head> section and the <body> section are correct"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "Both the <head> section and the <body> section are correct"
             },
 
             {
-                "question": "2. Which one is correct team name in NBA?",
+                "question": "2. Inside which HTML element do we put the JavaScript?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "<script>",
+                    "<javascript>",
+                    "<js>"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "<script>"
             },
 
             {
-                "question": "3. Which one is correct team name in NBA?",
+                "question": "3. What is the correct syntax for referring to an external script called 'xxx.js'?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "<script href='xxx.js'>",
+                    "<script name='xxx.js'>",
+                    "<script src='xxx.js'>"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "<script src='xxx.js'>"
             },
 
             {
-                "question": "4. Which one is correct team name in NBA?",
+                "question": "4. The external JavaScript file must contain the <script> tag.",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "True",
+                    "False"
+                    
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "False"
             },
 
             {
-                "question": "5. Which one is correct team name in NBA?",
+                "question": "5. How do you write 'Hello World' in an alert box?",
                 "options": [
-                    "New York Bulls",
-                    "Los Angeles Kings",
-                    "Golden State Warriors"
+                    "alert('Hello World');",
+                    "alertBox('Hello World');",
+                    "msg('Hello World');"
                     
                 ],
-                "answer": "New York Bulls"
+                "answer": "alert('Hello World');"
             }
         ]
         
